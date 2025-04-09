@@ -9,8 +9,8 @@ label_map = {0: 'cardboard', 1: 'glass', 2: 'metal', 3: 'paper', 4: 'plastic', 5
 
 @st.cache_resource
 def load_model():
-    model = joblib.load("D:\M.Tech\Computer vision\Apps\Streamlit_test2\model\optimized_model.pkl")
-    scaler = joblib.load("D:\M.Tech\Computer vision\Apps\Streamlit_test2\model\scaler.pkl")
+    model = joblib.load("model/optimized_model.pkl")
+    scaler = joblib.load("model/scaler.pkl")
     return model, scaler
 
 def extract_features(img):
